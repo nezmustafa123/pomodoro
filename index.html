@@ -1,0 +1,95 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+   <!-- My CSS -->
+    <link rel="stylesheet" href="styles.css"/>
+
+  <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <title>Pomodoro App</title>
+  </head>
+  <body onload="template()">
+      
+      
+      
+      <div class="container">
+        <!-- heading-->
+          
+          <h1 class="text-center my-5 heading">Tomato/Pomodoro Timer</h1>
+          
+          <div class="container timer">
+<!--              left hand side minutes right hand side seconds-->
+              
+              <div class="row">
+                  <div class="col-5">
+                      <h4 id="minutes"></h4>
+                  </div>
+                   <div class="col-2">
+                      <h4>:</h4>
+                  </div>
+                   <div class="col-5">
+                      <h4 id="seconds"></h4>
+                  </div>
+                  
+              </div>
+          </div>
+          
+          <div>
+<!--             add done message dynamically-->
+              <h3 id="done" class="text-center my-5"></h3>
+          </div>
+          
+          
+          
+<!--          start and reset button-->
+          <div class="container d-flex justify-content-center align-items-center my-5">
+              <button class="btn" onclick="start()"><i class="fas fa-play fa-2x"></i></button>
+<!--              //when this buton is clicked reloat the page which resets the timer-->
+                <a href="index.html"><i class="fas fa-pause"></i></a>
+              <a href="index.html"><i class="fas fa-redo-alt fa-2x"></i></a>
+          </div>
+          
+          
+      </div>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>  
+ 
+   <!-- My JS -->
+    <script src="script.js"></script>
+    
+      <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/996973c893.js"></script>
+
+
+  </body>
+</html>
+
+
+
+
