@@ -5,7 +5,7 @@ body  {
 }
 
 .heading {
-    color: #bae8e8;
+    color: #fff;
 }
 
 .row {
@@ -25,14 +25,14 @@ body  {
 }
 
 .fa-play, .fa-redo-alt, .fa-pause {
-    color: #e3f6f5;
+    color: #fff;
     border: 2px solid transparent; 
     padding: 1rem;
     border-radius: 2rem;
 }
 
 .fa-play:hover, .fa-redo-alt:hover, .fa-pause:hover {
-    color: #bae8e8;
+    color: #fff;
     border: 2px solid #bae8e8;
     transition: 0.3s ease;
 }
@@ -41,7 +41,7 @@ body  {
 /*    make the html visible*/
     display: block;
     padding: 1rem 0;
-    color: #272343;
+    color: #fff;
     background: #e3f6f5;
     border-radius: 0.5rem;
     transition: 0.5s ease;
