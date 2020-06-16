@@ -15,13 +15,30 @@ body  {
 .timer{
     color: #fff;
     text-align: center;
-    width: 20rem;
-    height: 20rem;
+    width: 25rem;
+    height: 25rem;
     border: 5px solid #fff;
-    border-radius: 10rem;
+    border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.input-minutes {
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 39%; 
+    width: 9%;
+ 
+}
+.input-seconds {
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 51%;
+    width: 9%;
+  
 }
 
 .fa-play, .fa-redo-alt, .fa-pause {

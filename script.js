@@ -5,7 +5,10 @@ var myInterval = 0;
 var click = new Audio('click.mp3');
 var bell = new Audio('bell.mp3');
 
+var minuteInput = document.querySelector('.input-minutes');
+var secondsInput = document.querySelector('.input-seconds');
 var pause = document.querySelector('.btn_pause');
+
 
 function formatSeconds(sec) {
     if(sec === 0 ) {
@@ -26,11 +29,13 @@ function template() {
 // seconds = 59;
 
 function start() {
+  minutes = minuteInput.value;
+  seconds = secondsInput.value;
     click.play();
     
+    document.querySelector('.input-minutes').value = '';
+    document.querySelector('.input-seconds').value = '';
     //change number in timer
-    
-  
     
     document.getElementById("minutes").innerHTML = minutes;
     document.getElementById("seconds").innerHTML = formatSeconds(seconds);
@@ -41,7 +46,15 @@ function start() {
     var seconds_interval = setInterval(secondsTimer, 1000);
 
 //has to be declared inside the start function
+      pause.addEventListener('click', function(e) {
+       e.preventDefault();
+//        clearInterval(minutes_interval);
+        clearInterval(seconds_interval);
+    });
 
+
+
+};
 function minutesTimer() {
     //will fire every 6000 milliseconds
     //and decrease the minunte number 
@@ -75,13 +88,11 @@ function secondsTimer() {
    }
 
     
-    pause.addEventListener('click', function(e) {
-       e.preventDefault();
-//        clearInterval(minutes_interval);
-        clearInterval(seconds_interval);
-    }
-
-)};
-
+//    pause.addEventListener('click', function(e) {
+//       e.preventDefault();
+////        clearInterval(minutes_interval);
+//        clearInterval(seconds_interval);
+//    });
+//
 
 
